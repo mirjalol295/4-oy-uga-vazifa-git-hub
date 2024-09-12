@@ -12,52 +12,52 @@
 body {
   font-family: 'Poppins', sans-serif;
   transition: background-color 0.3s, color 0.3s;
-  background-color: #ffffff; /* default background color */
-  color: #000000; /* default text color */
+  background-color: #ffffff; 
+  color: #000000; 
 }
 
-/* Dark mode styles */
+
 body.dark-mode {
-  background-color: #000000; /* dark mode background color */
-  color: #ffffff; /* dark mode text color */
+  background-color: #000000;
+  color: #ffffff; 
 }
 
 body.dark-mode .head {
-  background-color: #222222; /* dark mode header background color */
+  background-color: #222222; 
 }
 
 body.dark-mode .h1_Product {
-  color: #ffffff; /* dark mode header text color */
+  color: #ffffff; 
 }
 
 body.dark-mode .head_links a {
-  color: #cccccc; /* dark mode link color */
+  color: #cccccc; 
 }
 
 body.dark-mode .white_button_signin {
-  border-color: #444444; /* dark mode button border color */
-  color: #ffffff; /* dark mode button text color */
-  background-color: #333333; /* dark mode button background color */
+  border-color: #444444; 
+  color: #ffffff;
+  background-color: #333333; 
 }
 
 body.dark-mode .white_button_signin:hover {
-  background-color: #555555; /* dark mode button hover background color */
+  background-color: #555555; 
 }
 
 body.dark-mode .Green_button_signin {
-  background-color: #00796b; /* dark mode green button background color */
+  background-color: #00796b;
 }
 
 body.dark-mode .Green_button_signin:hover {
-  background-color: #004d40; /* dark mode green button hover background color */
+  background-color: #004d40; 
 }
 
 body.dark-mode .icons .darmode {
-  background-color: #444444; /* dark mode icon background color */
+  background-color: #444444; 
 }
 
 body.dark-mode .icons .darmode i {
-  color: #ffffff; /* dark mode icon color */
+  color: #ffffff; 
 }
 
 
