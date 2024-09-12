@@ -1,0 +1,176 @@
+.head {
+  width: 1200px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.head_first_img img {
+  width: 40px;
+  height: 36.36px;
+}
+
+.h1_Product {
+  width: 122px;
+  height: 28px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #173a56;
+  margin-left: 16px;
+}
+
+.head_links {
+  width: 379px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 237px;
+}
+
+.head_links a {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: grey;
+  transition: all ease 0.3s;
+}
+
+.head_links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #22343d;
+  transition: width 0.4s ease;
+}
+
+.head_links a:hover::after {
+  width: 100%;
+}
+
+.head_links a:hover {
+  color: #173a56;
+}
+
+.white_button_signin {
+  width: 102px;
+  height: 43px;
+  border: 1px solid rgb(181, 170, 170);
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #173a56;
+  border-radius: 5px;
+  margin-left: 24px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.white_button_signin:hover {
+  background-color: #173a56;
+  color: white;
+  border: 1px solid #ffffff;
+}
+
+.Green_button_signin {
+  width: 110px;
+  height: 43px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #02897a;
+  border-radius: 5px;
+  margin-left: 24px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.Green_button_signin:hover {
+  border: 2px solid #02897a;
+  background-color: #ffffff;
+  color: #02897a;
+}
+
+.darmode {
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 24px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.darmode:hover {
+  background-color: #02897a;
+}
+
+.darmode i {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  color: #02897a;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.darmode i:hover {
+  color: #fff;
+}
+
+.hamburger-menu {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hamburger-menu i {
+  font-size: 28px;
+  color: #02897a;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mobile-menu ul {
+  display: none;
+  flex-direction: column;
+}
+
+.mobile-menu a {
+  padding: 10px;
+  color: grey;
+}
+
+.mobile-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile_head_links {
+  display: flex;
+  flex-direction: column;
+}

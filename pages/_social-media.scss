@@ -1,0 +1,90 @@
+
+.section_1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 16px; 
+    
+  }
+  
+  .social_media {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .social_media_left_part {
+    max-width: 600px;
+    
+  }
+  
+  .heading_and_paragraf_part h1 {
+    font-size: 2rem;
+  }
+  
+  .button_watch {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .social_media_btn_1 {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #02897a;
+    color: azure;
+    border: none;
+    cursor: pointer;
+    transition: all ease 0.3s;
+  }
+  .social_media_btn_1:hover{
+    background-color: #fff;
+    border:2px solid #02897a;
+    color: #02897a;
+  }
+  
+  .social_media_watch {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .social_media_right_part img {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  @media (max-width: 1024px) {
+    
+    .head_links {
+      display: none; 
+    }
+    .white_button_signin, .Green_button_signin {
+      display: none; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    
+    .head_links, .white_button_signin, .Green_button_signin {
+      display: none; 
+    }
+    .hamburger-menu {
+      display: flex; 
+    }
+    .mobile-menu {
+      display: none; 
+    }
+    .mobile-menu.show {
+      display: flex; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+   
+    .head_first_img, .h1_Product {
+      display: none; 
+    }
+  }
