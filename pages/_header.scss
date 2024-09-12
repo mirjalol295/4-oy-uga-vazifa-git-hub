@@ -1,23 +1,21 @@
+
 .head {
-  width: 1200px;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 16px;
   position: relative;
 }
 
 .head_first_img img {
   width: 40px;
-  height: 36.36px;
+  height: 36px;
 }
 
 .h1_Product {
-  width: 122px;
-  height: 28px;
   font-size: 30px;
   font-weight: 700;
-  line-height: 28px;
   color: #173a56;
   margin-left: 16px;
 }
@@ -103,74 +101,105 @@
   color: #02897a;
 }
 
-.darmode {
-  width: 32px;
-  height: 32px;
-  border-radius: 100px;
-  background-color: #f3f3f3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.white_button_signin, .Green_button_signin {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.white_button_signin {
+  border: 1px solid grey;
+  color: #173a56;
   margin-left: 24px;
-  cursor: pointer;
-  transition: all ease 0.3s;
 }
 
-.darmode:hover {
+.white_button_signin:hover {
+  background-color: #173a56;
+  color: white;
+}
+
+.Green_button_signin {
   background-color: #02897a;
+  color: white;
+  margin-left: 24px;
 }
 
-.darmode i {
-  width: 24px;
-  height: 24px;
-  font-size: 24px;
+.Green_button_signin:hover {
+  background-color: white;
   color: #02897a;
-  cursor: pointer;
-  transition: all ease 0.3s;
 }
 
-.darmode i:hover {
-  color: #fff;
+.icons {
+  display: flex;
+  gap: 24px;
 }
 
-.hamburger-menu {
+.darmode, .hamburger-menu {
   width: 32px;
   height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f3f3f3;
   border-radius: 50%;
+  background-color: #f3f3f3;
   cursor: pointer;
 }
 
-.hamburger-menu i {
-  font-size: 28px;
+.darmode i, .hamburger-menu i {
+  font-size: 24px;
   color: #02897a;
 }
 
 .mobile-menu {
-  display: none;
+  display: none; 
   flex-direction: column;
-  align-items: flex-start;
-}
-
-.mobile-menu ul {
-  display: none;
-  flex-direction: column;
-}
-
-.mobile-menu a {
   padding: 10px;
-  color: grey;
 }
 
-.mobile-buttons {
-  display: flex;
-  flex-direction: column;
+.mobile-menu.show {
+  display: flex; 
 }
 
 .mobile_head_links {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.mobile_buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
+
+  .head_links {
+    display: none;
+  }
+  .white_button_signin, .Green_button_signin {
+    display: none; 
+  }
+}
+
+@media (max-width: 768px) {
+
+  .head_links, .white_button_signin, .Green_button_signin {
+    display: none; 
+  }
+  .hamburger-menu {
+    display: flex; 
+  }
+  .mobile-menu {
+    display: none; 
+  }
+}
+
+@media (max-width: 576px) {
+
+  .head_first_img, .h1_Product {
+    display: none; 
+  }
 }

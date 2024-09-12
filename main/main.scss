@@ -1,4 +1,5 @@
-@import "../pages/social-media";
+@import '../pages/header';
+@import '../pages/social-media';
 
 * {
   margin: 0;
@@ -9,8 +10,57 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #ffffff; /* default background color */
+  color: #000000; /* default text color */
 }
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #000000; /* dark mode background color */
+  color: #ffffff; /* dark mode text color */
+}
+
+body.dark-mode .head {
+  background-color: #222222; /* dark mode header background color */
+}
+
+body.dark-mode .h1_Product {
+  color: #ffffff; /* dark mode header text color */
+}
+
+body.dark-mode .head_links a {
+  color: #cccccc; /* dark mode link color */
+}
+
+body.dark-mode .white_button_signin {
+  border-color: #444444; /* dark mode button border color */
+  color: #ffffff; /* dark mode button text color */
+  background-color: #333333; /* dark mode button background color */
+}
+
+body.dark-mode .white_button_signin:hover {
+  background-color: #555555; /* dark mode button hover background color */
+}
+
+body.dark-mode .Green_button_signin {
+  background-color: #00796b; /* dark mode green button background color */
+}
+
+body.dark-mode .Green_button_signin:hover {
+  background-color: #004d40; /* dark mode green button hover background color */
+}
+
+body.dark-mode .icons .darmode {
+  background-color: #444444; /* dark mode icon background color */
+}
+
+body.dark-mode .icons .darmode i {
+  color: #ffffff; /* dark mode icon color */
+}
+
+
 
 .container {
   max-width: 1280px;
@@ -18,6 +68,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 
 .head {
   height: 80px;
@@ -121,8 +172,7 @@ body {
   color: #02897a;
 }
 
-.white_button_signin,
-.Green_button_signin {
+.white_button_signin, .Green_button_signin {
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
@@ -157,8 +207,7 @@ body {
   gap: 24px;
 }
 
-.darmode,
-.hamburger-menu {
+.darmode, .hamburger-menu {
   width: 32px;
   height: 32px;
   display: flex;
@@ -169,20 +218,19 @@ body {
   cursor: pointer;
 }
 
-.darmode i,
-.hamburger-menu i {
+.darmode i, .hamburger-menu i {
   font-size: 24px;
   color: #02897a;
 }
 
 .mobile-menu {
-  display: none;
+  display: none; 
   flex-direction: column;
   padding: 10px;
 }
 
 .mobile-menu.show {
-  display: flex;
+  display: flex; 
 }
 
 .mobile_head_links {
@@ -198,32 +246,31 @@ body {
 }
 
 @media (max-width: 1024px) {
+
   .head_links {
     display: none;
   }
-  .white_button_signin,
-  .Green_button_signin {
-    display: none;
+  .white_button_signin, .Green_button_signin {
+    display: none; 
   }
 }
 
 @media (max-width: 768px) {
-  .head_links,
-  .white_button_signin,
-  .Green_button_signin {
-    display: none;
+
+  .head_links, .white_button_signin, .Green_button_signin {
+    display: none; 
   }
   .hamburger-menu {
-    display: flex;
+    display: flex; 
   }
   .mobile-menu {
-    display: none;
+    display: none; 
   }
 }
 
 @media (max-width: 576px) {
-  .head_first_img,
-  .h1_Product {
-    display: none;
+
+  .head_first_img, .h1_Product {
+    display: none; 
   }
 }
